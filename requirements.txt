@@ -1,8 +1,8 @@
-streamlit
-Pillow
-opencv-python
-numpy
-tensorflow
+streamlit==1.24.1
+Pillow==9.5.0
+opencv-python==4.8.0.74
+numpy==1.24.3
+tensorflow==2.13.0
 tensorflow-datasets
-matplotlib
-keras
+matplotlib==3.7.2
+keras==2.13.1
