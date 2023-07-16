@@ -1,0 +1,8 @@
+streamlit
+Pillow
+opencv-python
+numpy
+tensorflow
+tensorflow-datasets
+matplotlib
+keras
