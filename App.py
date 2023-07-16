@@ -15,8 +15,6 @@ def load_unet():
     if 'unet_model_weight_gg.h5' not in os.listdir('Weights'):
         print('Downloading...')
         request.urlretrieve(url, 'Weights/unet_model_weight_gg.h5')
-
-def load_unet():
     model = load_model()
     return model
 
