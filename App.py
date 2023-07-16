@@ -4,10 +4,17 @@ from PIL import Image
 import cv2
 import numpy as np
 import io
+import os
 import tensorflow as tf
+from urllib import request
 from keras.preprocessing import image_dataset_from_directory
 
 @st.cache_resource
+def load_unet():
+    url = 'https://github.com/VoidKeishi/Polyp_Segmentation/releases/download/v1.0/unet_model_weight_gg.h5'
+    if 'unet_model_weight_gg.h5' not in os.listdir('Weights'):
+        print('Downloading...')
+        request.urlretrieve(url, 'Weights/unet_model_weight_gg.h5')
 def load_unet():
     model = load_model()
     return model
