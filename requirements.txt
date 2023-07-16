@@ -6,3 +6,4 @@ tensorflow==2.13.0
 tensorflow-datasets
 matplotlib==3.7.2
 keras==2.13.1
+pyvirtualdisplay==2.2
